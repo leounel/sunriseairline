@@ -1,0 +1,48 @@
+:root {
+  color: white;
+  background-color: black;
+  font-family: 'Inter', serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --color-brand-primary: #FF4D00;
+  --color-text: white;
+  --color-text-secondary:#454545;
+  --color-bg-dark: #1b1b1b;
+  --color-bg-dark-subtle: #1f1f1f;
+  --color-bg-darkest: #161616;
+  --color-border: #303030;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('../src/assets/fonts/Geist-Regular.woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../src/assets/fonts/Inter-Regular.woff2');
+}
+
+@font-face {
+  font-family: 'Inter Medium';
+  src: url('../src/assets/fonts/Inter-Medium.woff2');
+}
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url('../src/assets/fonts/Inter-Bold.woff2');
+}
+
+body {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
