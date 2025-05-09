@@ -1,13 +1,14 @@
 :root {
   color: white;
   background-color: black;
-  font-family: 'Inter', serif;
+  font-family: 'Inter', sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --color-brand-primary: #FF4D00;
-  --color-text: white;
+  --color-brand-hover: #462213;
+  --color-text: #FF4D0080;
   --color-text-secondary:#454545;
   --color-bg-dark: #1b1b1b;
   --color-bg-dark-subtle: #1f1f1f;

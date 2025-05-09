@@ -12,7 +12,7 @@
 }
 
 .intro-container h1 {
-  color: var(--color-text);
+  color: white;
   /*animation: fadeOutText 0.6s ease-in-out forwards;
   /* animation-delay: 1.8s; /* Text starts fading out at the same time */
 }
