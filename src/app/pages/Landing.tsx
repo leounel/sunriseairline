@@ -13,7 +13,10 @@ function Landing() {
           </header>
           <BookingForm/>
         </section>
-        <Carrousel/>
+        <section className='promotions-section'>
+          <h2>Elige nuestras ubicaciones más exclusivas</h2>
+          <Carrousel/>
+        </section>
       </main>
     );
 }

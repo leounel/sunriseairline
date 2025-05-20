@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Geist';
-  src: url('../src/assets/fonts/Geist-Regular.woff2');
+  src: url('../src/assets/fonts/Geist.woff2');
 }
 
 @font-face {
@@ -42,8 +42,18 @@
   src: url('../src/assets/fonts/Inter-Bold.woff2');
 }
 
+@font-face {
+  font-family: 'Sentient Italic';
+  src: url('../src/assets/fonts/Sentient-VariableItalic.woff2')
+}
+
 body {
   display:flex;
   align-items: center;
   justify-content: center;
+}
+
+#root {
+  max-width: 1440px;
+  width:100%;
 }

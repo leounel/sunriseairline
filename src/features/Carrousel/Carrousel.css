@@ -1,0 +1,167 @@
+@import 'swiper/css';
+
+.carrousel-container{
+    position:relative;
+    width: 100%;
+}
+.opacity {
+    opacity:50%;
+}
+
+.window-container {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.window-image-container {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window-image {
+    z-index: 1;
+    width:100%;
+    min-width:150px;
+    max-width:350px;
+}
+
+.oval-container {
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+    top:0px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.oval-container img{
+    height:80%;
+}
+
+.oval-brightness {
+    position:absolute;
+    height:70%;
+    width:100%;
+    border-radius: 50%;
+    background-image: radial-gradient(
+    rgba(255, 255, 255, 0)0%,
+    rgba(255, 255, 255, 0.05) 40%,
+    rgba(255, 255, 255, 1) 80%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+.window-description {
+    font-family:'Sentient Italic', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.window-country {
+    letter-spacing: 4px;
+    font-size: 1.5em;
+    font-weight:400;
+}
+
+.window-province {
+    font-size:0.9em;
+    font-weight:200;
+}
+
+.window-blur {
+    filter: blur(1px);
+}
+
+.swiper-slide.swiper-slide-active {
+    opacity:100%;
+    transition: opacity 0.5s ease-in-out;
+    filter:none;
+}
+
+.swiper-slide {
+    opacity: 60%;
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.swiper-button {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    padding:3em;
+}
+
+.swiper-button button {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Geist', sans-serif;
+    font-size:1.2em;
+    font-weight:500;
+    color:var(--color-brand-primary);
+    background: linear-gradient(#3F2216) padding-box,
+                linear-gradient(150deg, var(--color-brand-primary) 0%, #8a330e 37%, #50220e 100%) border-box;
+    background-clip: padding-box, border-box;
+    border: 2px transparent solid;
+    cursor:pointer;
+    padding:0.8em 1.5em;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 10px rgba(255,77,0,0.20);
+}
+
+.swiper-button button::after {
+    position:absolute;
+    padding:0.3em;
+    width:100%;
+    height: 100%;
+    content: '';
+    border: 1px solid #55555560;
+    border-radius:50px;
+    z-index: -1;
+}
+
+.swiper-edges {
+    pointer-events: none;
+    position: absolute;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+
+.swiper-edge {
+    z-index: 1;
+    height:100%;
+    width:25%;
+}
+
+.swiper-left-edge {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 30%, black);
+}
+
+.swiper-right-edge {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, black);
+}
+
+
+@media (width > 1000px) {
+    .swiper-edge {
+        width:5%;
+    }
+}
+
+@media (width > 1440px) {
+    .swiper-edges{
+        width:101%;
+        margin-left: -3px;
+    }
+}
