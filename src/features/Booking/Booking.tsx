@@ -4,6 +4,7 @@ import route from './assets/icons/route.svg'
 import Autocomplete from '@/components/Autocomplete/Autocomplete.tsx'
 import OriginIcon from './assets/icons/origin.svg?react'
 import DestinationIcon from './assets/icons/destination.svg?react'
+import CalendarIcon from '../../assets/icons/calendar.svg?react'
 
 function Booking() {
     return (
@@ -34,12 +35,14 @@ function Booking() {
                     <div className='date-container'>
                         <div className='date-group'>
                             <div className='date-button-container'>
+                                <CalendarIcon/>
                                 <button className='date-button' type='button'/>   
                             </div>
                             <input id='date-go' type='text' placeholder='Ida'/>
                         </div>
                         <div className='date-group'>
                             <div className='date-button-container'>
+                                <CalendarIcon/>
                                 <button className='date-button' type='button'/>
                             </div>
                             <input id='date-return' type='text' placeholder='Vuelta'/>

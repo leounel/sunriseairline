@@ -119,17 +119,24 @@
 
 .date-button-container{
     position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }  
+
+.date-button-container svg {
+    position: absolute;
+    height:40%;
+    aspect-ratio: 1;
+    pointer-events: none;
+}
   
 .date-button {
     font-family:inherit;
     font-size: 0.9em;
     border-radius: 50%;
     height:100%;
-    aspect-ratio: 1/1;
-    background: url('@/assets/icons/calendar.svg') no-repeat;
-    background-position: center;
-    background-size: 1em;
+    width:45px;
     background-color: var(--color-bg-darkest);
     border:none;
     border-top: 1.5px solid var(--color-border);

@@ -62,6 +62,7 @@
 }
 
 .select-content {
+    z-index: 2;
     width:var(--radix-select-trigger-width);
     background-color: var(--color-bg-darkest);
     text-align: center;
